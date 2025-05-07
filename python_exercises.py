@@ -36,7 +36,7 @@ print(x+y)
 print(3 * "cool")
 
 #exercise 12
-#print(1/0)
+print(1/0)
 
 #exercise 13
 x = type([])
@@ -46,3 +46,24 @@ print(x)
 name = input('write_name:')
 
 #exercise 15
+x = int(input('write_a_number:'))
+
+if x < 0:
+    print('That number is less than 0!')
+elif x > 0:
+    print('That number is greater than 0!')
+else:
+    print('You picked 0!')
+
+#exercise 16
+x = 'apple'.index('l')
+print(x)
+
+#exercise 17
+print('y' in "xylophone")
+
+
+#exercise 18
+
+my_string = 'my_string'
+print(my_string.islower())
