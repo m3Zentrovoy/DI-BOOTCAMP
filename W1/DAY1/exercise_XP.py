@@ -12,7 +12,7 @@
 # 5 < 3 # Falce
 # 3 == 3 #True
 # 3 == "3" #Falce
-# print("3" > 3) #error
+# print("3" > 3) #TypeError
 # print("Hello" == "hello") #Falce
 
 # #ex4
