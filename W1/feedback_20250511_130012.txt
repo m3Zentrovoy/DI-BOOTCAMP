@@ -1,0 +1,13 @@
+URL: https://github.com/m3Zentrovoy/DI-BOOTCAMP/blob/main/W1/Daily-challenge.py
+suggestions for improvement:
+- The code should explicitly handle the case where the user inputs something that is not a string (e.g., numbers).  Add input validation to ensure the input is a string.
+- Improve the output formatting for printing the first and last characters. Currently it's somewhat clunky.
+- Add more descriptive variable names (e.g., instead of `x` and `y`, use `first_char` and `last_char`).
+- Consider adding comments to explain the purpose of different code sections, especially the loop and shuffling part.
+- The prompt states that the string must be exactly 10 characters long.  The current code only checks length and doesn't enforce it.  This should be improved by requesting input repeatedly until a valid 10-character string is provided.
+Brief justification:
+- correctness: The code correctly implements the length check and prints the first and last characters if the input is exactly 10 characters long. It also successfully builds and prints the string character by character using a for loop.  The string shuffling (bonus) is correctly implemented. However, it does not handle non-string input or explicitly enforce the 10-character requirement in the input.  These omissions prevent a perfect score.
+- readability: The code is mostly readable but could be improved with better variable names and comments. The output formatting for the first and last character could be more elegant. The structure is fairly straightforward, making it relatively easy to follow.
+- performance: The code's performance is excellent for this task; there are no unnecessary computations or inefficiencies.  The use of list slicing and the `join()` method is efficient.
+- security: The code doesn't have any obvious security vulnerabilities. It's purely based on string manipulation and doesn't involve file I/O, network communication, or external libraries that could introduce security risks.
+
