@@ -37,7 +37,3 @@
 # print(persom_country)
 
 
-
-#LOOPS
-
-
