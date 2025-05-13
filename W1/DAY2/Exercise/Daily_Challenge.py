@@ -17,13 +17,13 @@
 
 #ex2
 
-# word = input('Write a string ')
-# result = []
-# for char in word:
-#     if not result:
-#        result.append(char)
-#     elif result and char != result[-1]:
-#         result.append(char)
+word = input('Write a string ')
+result = []
+for char in word:
+    if not result:
+       result.append(char)
+    elif result and char != result[-1]:
+        result.append(char)
     
-# print(''.join(result))
+print(''.join(result))
 
