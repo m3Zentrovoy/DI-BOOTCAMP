@@ -1,16 +1,16 @@
 
 # Challenge 1
 
-# dictonary = {}
-# word = input("Enter a word ")
+dictonary = {}
+word = input("Enter a word ")
 
-# for index, char in enumerate(word):
-#     if char in dictonary:
-#      dictonary[char].append(index)
-#     else:
-#         dictonary[char] = [index]
+for index, char in enumerate(word):
+    if char in dictonary:
+     dictonary[char].append(index)
+    else:
+        dictonary[char] = [index]
 
-# print(dictonary)
+print(dictonary)
 
 
 # Challenge 2
