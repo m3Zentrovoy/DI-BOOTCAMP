@@ -21,7 +21,7 @@ decoded_message = ""
 for char in column_chars:
     if char.isalpha():
         decoded_message += char
-        counts = [0, 0, 0]  # Для трёх столбцов
+        counts = [0, 0, 0]  
 for col in range(3):
     for row in range(7):
         char = column_chars[col * 7 + row]
@@ -33,7 +33,7 @@ for count in counts:
     groups.append(decoded_message[start:start + count])
     start += count
 
-# Соединяем с пробелами
+
 decoded_message = " ".join(groups).strip()
        
 print(decoded_message)
