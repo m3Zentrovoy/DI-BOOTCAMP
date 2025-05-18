@@ -102,3 +102,6 @@
 #     return count
 
 # print(count_lst(user_list, item))
+
+
+#ex8
