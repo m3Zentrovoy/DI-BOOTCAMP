@@ -1,0 +1,13 @@
+URL: https://github.com/m3Zentrovoy/DI-BOOTCAMP/blob/main/W1/DAY2/Exercise/Daily_Challenge.py
+suggestions for improvement:
+- **Challenge 1:** The code for Challenge 1 correctly generates a list of multiples. However, it lacks error handling.  It should handle cases where the user inputs non-integer values or a length of 0 or less.
+- **Challenge 1:**  Consider using a list comprehension for a more concise solution. This would improve readability and potentially performance slightly.
+- **Challenge 2:** The code for Challenge 2 is functional and correctly removes consecutive duplicate letters.  However, the variable name `result` could be more descriptive (e.g., `unique_word`).
+- **Challenge 2:**  The use of `if not result` and `elif result and ...`  is a bit verbose.  A simpler conditional structure might improve readability.
+- **General:** Add comments to explain the purpose of each section of the code, especially the conditions in Challenge 2. This improves readability significantly.
+Brief justification:
+- correctness: The code largely fulfills the requirements of both challenges.  Challenge 1 accurately generates lists of multiples, and Challenge 2 correctly removes consecutive duplicate letters from a string.  The deduction is for the lack of error handling in Challenge 1.
+- readability: The code is generally understandable. However, some improvements in variable naming (Challenge 2) and the simplification of conditional statements (Challenge 2) would enhance readability.  Adding comments would further improve this.
+- performance: The performance of both solutions is reasonably good for the given tasks.  List comprehensions could offer a slight performance advantage in Challenge 1, but the difference would be minimal for small inputs. The current approach is perfectly acceptable for efficiency.
+- security: No security vulnerabilities are present in the provided code. The code only interacts with user input and performs basic string and arithmetic operations, posing no security risks.
+
