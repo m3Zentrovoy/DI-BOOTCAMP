@@ -1,0 +1,13 @@
+URL: https://github.com/m3Zentrovoy/DI-BOOTCAMP/blob/main/W1/DAY5(Mini_Project)/Exercise/Daily.py
+suggestions for improvement:
+- Challenge 1: The code for Challenge 1 has a minor issue. It attempts to strip whitespace using `word.strip()` within the list comprehension but applies `.split(',')` to the original unprocessed string, resulting in possible extra spaces not being removed properly.  The `split_str = user_str.split(',')` line is redundant and should be removed.
+- Challenge 1: Add more robust input validation to handle potential errors, such as the user entering no input or only commas.
+- Challenge 2: The `takes_str` function's name could be more descriptive, such as `find_longest_word` or `longest_word`. The function assumes the input sentence contains at least one word. Handle cases with empty inputs more gracefully.
+- Challenge 2:  The solution does not correctly handle punctuation within words as described in the challenge instructions.  The `split()` method will incorrectly separate words based on whitespace, splitting words containing punctuation. For example, inputting 'hello, world!' should return 'hello,', not 'hello'.
+- Improve docstrings for both functions to enhance readability and understanding.
+Brief justification:
+- correctness: Challenge 1's code mostly works but has a minor flaw in whitespace handling and lacks input validation.  Challenge 2's code implements a basic algorithm, but it doesn't handle the challenge's requirement to include punctuation as part of the word and lacks error handling for empty input. The chapter specifically mentions using `.split()`, `sort()`, and `join()` which are all used, although the whitespace handling is imperfect in Challenge 1.
+- readability: The code is mostly readable, but the variable names in Challenge 1 could be more descriptive (e.g., `words` instead of `split_str`).  Adding a docstring to the function in Challenge 2 would enhance readability. The function names are not very descriptive in both challenges.
+- performance: The algorithms used are efficient for the given tasks, with time complexity linear in the number of words for both challenges.  The use of list comprehension in Challenge 1 is a positive aspect of performance.
+- security: The code doesn't have any obvious security vulnerabilities as it only interacts with user input and performs string operations. There are no external resources or database access involved.
+
