@@ -93,15 +93,50 @@
 
 # item = input('Write element for search ')
 
-# def count_lst(lst,element):
+# def count_lst(lst, element):
 #     count = 0
-#     for element in lst:
-#         if item == element:
-#             count += 1
+#     for toy in lst:  # Перебираем каждую игрушку
+#         if toy == element:  # Если это кубик
+#             count += 1  # Добавляем 1 к счётчику
+#     return count  # Возвращаем, сколько нашли
 
-#     return count
-
-# print(count_lst(user_list, item))
+# # Пример
+# user_list = ['мяч', 'кубик', 'машина', 'кубик']
+# item = 'кубик'
+# print(count_lst(user_list, item))  # Вывод: 2
 
 
 #ex8
+
+def is_mono(lst):
+    # Если список пустой или из одного элемента, он монотонный
+    if len(lst) <= 1:
+        return True
+
+    # Проверяем каждую пару соседних элементов
+    for i in range(1, len(lst)):
+        if lst[i] > lst[i-1]:  # Если возрастает
+            is_decreasing = False
+        elif lst[i] < lst[i-1]:  # Если убывает
+            is_increasing = False
+    
+    # Массив монотонный, если он либо возрастающий, либо убывающий
+    return is_increasing or is_decreasing
+
+# Тестируем
+print(is_mono([7, 6, 5, 5, 2, 0]))  # True (убывающий)
+print(is_mono([2, 3, 3, 3]))        # True (возрастающий)
+print(is_mono([1, 2, 0, 4]))        # False (не монотонный)
+
+
+
+
+#ex9
+
+# A function that returns the length of the value:
+def myFunc(e):
+  return len(e)
+
+cars = ['Ford', 'Mitsubishi', 'BMW', 'VW']
+cars.sort(key=myFunc)
+print(cars)
