@@ -1,0 +1,12 @@
+URL: https://github.com/m3Zentrovoy/DI-BOOTCAMP/blob/main/W1/DAY3/Exercise/XP.py
+suggestions for improvement:
+- Exercise 1: The code iterates through the zipped list but doesn't create the dictionary as requested.  It should use the `dict()` function or dictionary comprehension.
+- Exercise 2: The code correctly calculates the ticket cost but doesn't include the bonus part (user input).
+- Exercise 3: The code has some issues.  It incorrectly handles the `international_competitors` update (it overwrites instead of appending), and there's a typo in the bonus section ('сreation_date').  Also, the exercise asks for `.pop()` and `.update()`, which were not used.
+- Exercise 4: The code correctly implements the first two parts, but the third part uses `enumerate(sorted(users))` which does not map the sorted characters to their correct, sequential indices. It should use a different approach.
+Brief justification:
+- correctness: Exercise 1 is partially correct; the logic is there but the final dictionary creation is missing. Exercise 2 is mostly correct but lacks the bonus feature. Exercise 3 has several errors in its implementation. Exercise 4 is partially correct; the first two points are correct while the third point is implemented incorrectly.
+- readability: The code is generally readable, with some minor issues like inconsistent formatting and variable naming. Adding comments would greatly improve readability, especially in Exercise 3.
+- performance: The code's performance is acceptable for the given tasks.  There are no major performance bottlenecks, but optimizations are possible (e.g., using more efficient data structures or algorithms where appropriate).
+- security: There are no security concerns in the provided code.
+
