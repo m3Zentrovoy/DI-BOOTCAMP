@@ -7,8 +7,11 @@
 # my_tuple = tuple(range(11))
 # print(my_tuple)
 
-# passwords = ('abc', 'cde', '123', 'abc')
-# print(passwords.count('abc'))
+# def new_func():
+#     passwords = ('abc', 'cde', '123', 'abc')
+#     print(passwords.count('abc'))
+
+# new_func()
 
 # #accessing by index
 # print(passwords[1])
@@ -26,12 +29,12 @@
 # not ordered: not possible to access by index
 # don't allow duplicated elements
 
-set = set()
+# set = set()
 
-countries = {'Israel', 'USA', 'Brazil'}
-names = {'Shimon', 'Hanna', 'Israel'}
+# countries = {'Israel', 'USA', 'Brazil'}
+# names = {'Shimon', 'Hanna', 'Israel'}
 
 # print(countries[1]) # TypeError: 'set' object is not subscriptable
 
-person_country = countries.intersection(names)
-print(person_country)
+# person_country = countries.intersection(names)
+# print(person_country)
