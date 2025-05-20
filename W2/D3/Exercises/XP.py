@@ -121,15 +121,16 @@ from faker import Faker
 fake = Faker()
 
 users_box= []
-user = {
+
+
+def generate_user(num_users):
+    for _ in range(num_users):
+        user = {
     "name":  fake.name(),
     "address": fake.address(),
     "language_code": fake.language_code()
 }
-
-def generate_user(num_users):
-    for _ in range(num_users):
-        users_box.append(user)
+        users_box.append(user.copy())
  
 generate_user(3) 
 print(users_box)
