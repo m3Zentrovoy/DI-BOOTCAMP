@@ -1,0 +1,12 @@
+URL: https://github.com/m3Zentrovoy/DI-BOOTCAMP/blob/main/W1/DAY1/exercise_XP.py
+suggestions for improvement:
+- In Exercise 3, the code doesn't handle string comparison with numbers correctly and there are missing `print()` statements. The comparison of strings and integers should be explained, noting that Python's comparison behavior is unique in this case.
+- In Exercise 7, the output messages are swapped.  If the number is even, it should print 'This is an even number', and vice versa.
+- Exercise 8 lacks a funny message as requested. The current messages are rather bland.
+- Add comments to explain the logic in each exercise, especially for more complex comparisons or conditional statements.
+Brief justification:
+- correctness: Most exercises are correctly implemented.  However, Exercise 3 contains errors in string/number comparisons, and incorrect messages in Exercise 7. Exercise 8 doesn't fulfill the 'funny message' requirement fully.  The overall correctness is impacted by these issues.  The code correctly uses print statements, variables, mathematical operations, comparison operators, if statements, and user input as outlined in the chapter.
+- readability: The code is generally easy to read and understand.  Variable names are descriptive, and the code structure is simple.  Adding comments would further improve readability, especially for the comparison operations in Exercise 3. 
+- performance: The code's performance is excellent; there are no obvious inefficiencies. The algorithms used are straightforward and suitable for the small datasets involved.
+- security: There are no apparent security vulnerabilities. The code does not handle external input in a way that would create security risks.  The user inputs are used directly without any sanitation or validation, but given the context of educational exercises, this isn't a significant concern.
+
