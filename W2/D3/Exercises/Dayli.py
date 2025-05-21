@@ -37,10 +37,7 @@ class Circle:
         return self.radius == other.radius
             
         
-circles = [Circle(5), Circle(3)]
-sorted_circles = sorted(circles)
-for circle in sorted_circles:
-    print(circle)
+
 
 
 c1 = Circle(8)
@@ -52,3 +49,10 @@ print(c1 + c2)
 print(c1 == c2)
 print(c1 > c2)
 print(c1 < c2)
+
+
+
+circles = [Circle(5), Circle(3)]
+sorted_circles = sorted(circles)
+for circle in sorted_circles:
+    print(circle)
