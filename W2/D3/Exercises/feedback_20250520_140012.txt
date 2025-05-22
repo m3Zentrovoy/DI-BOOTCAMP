@@ -1,0 +1,20 @@
+URL: URL: https://github.com/m3Zentrovoy/DI-BOOTCAMP/blob/main/W2/D3/Exercises/XP.py
+suggestions for improvement:
+- The `Currency` class implementation is mostly correct but lacks complete handling of the `__repr__` method and error handling in the addition methods. The `__repr__` should return a string that can be used to recreate the object, which is not the case in the provided code.
+- In the addition methods (`__add__` and `__iadd__`), there's a missing check for whether `other` is an instance of `Currency`. If `other` is not an instance of `Currency` or not an integer, it should raise a `TypeError`.  The error messages should also be more informative and consistent.
+- The code for exercises 2, 4, and 5 are missing. 
+- Exercise 3 uses `random.sample` which is not the most efficient method for generating random strings of a specified length;  Consider using `random.choices` instead.
+- In exercise 6, the `parse_birthdate` method should return the total minutes lived, not just the difference in days. The function name should be more descriptive of its function. 
+- Improve code commenting and add docstrings to functions for better readability.
+Correctness: 80%
+-----
+URL: URL: https://github.com/m3Zentrovoy/DI-BOOTCAMP/blob/main/W2/D3/Exercises/exercise_one.py
+suggestions for improvement:
+- Skipping file (too many comments or blank lines).
+Correctness: N/A%
+-----
+URL: URL: https://github.com/m3Zentrovoy/DI-BOOTCAMP/blob/main/W2/D3/Exercises/func.py
+suggestions for improvement:
+- Skipping file (too many comments or blank lines).
+Correctness: N/A%
+-----
