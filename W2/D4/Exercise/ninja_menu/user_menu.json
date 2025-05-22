@@ -1,0 +1,8 @@
+{
+    "menu": {
+        "a": "Add an item",
+        "d": "Delete an item",
+        "v": "View the menu",
+        "x": "Exit"
+    }
+}
