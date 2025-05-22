@@ -1,0 +1,18 @@
+URL: URL: https://github.com/m3Zentrovoy/DI-BOOTCAMP/blob/main/W2/D4/Exercise/Exercises-XP.py
+suggestions for improvement:
+- Implement the `get_words_from_file` and `get_random_sentence` functions as specified in Exercise 1.  The code currently only has commented-out versions.
+- In `main`, improve error handling and user experience by providing more specific and helpful error messages. For example, instead of 'Error: please enter an integer!', say something like 'Invalid input: Please enter a whole number between 2 and 20.'
+- Add input validation in `main` to ensure the file exists before attempting to process it.
+- In Exercise 2,  the code correctly accesses the nested key, adds a new key, and saves the modified JSON.  However, error handling should be added to manage potential file I/O issues.
+- Use more descriptive variable names (e.g., instead of `dictonar`, use `employee_data`).
+Correctness: 70%
+-----
+URL: URL: https://github.com/m3Zentrovoy/DI-BOOTCAMP/blob/main/W2/D4/Exercise/employee_data.json
+suggestions for improvement:
+- The provided code only addresses Exercise 2.  Exercise 1, the random sentence generator, is missing entirely.
+- Error handling (try-except blocks) is absent in both exercises. The code should include error handling to gracefully manage potential issues like file not found or invalid user input (for Exercise 1).
+- Input validation in Exercise 1 is missing.  The code should explicitly check if the user input is an integer and within the specified range (2-20).
+- The `main` function (Exercise 1) and the function to read words from the file (Exercise 1) are missing. These are crucial parts of the first exercise.
+- The date format in the JSON should be configurable, rather than hardcoded. It would improve flexibility and reusability.
+Correctness: 80%
+-----
