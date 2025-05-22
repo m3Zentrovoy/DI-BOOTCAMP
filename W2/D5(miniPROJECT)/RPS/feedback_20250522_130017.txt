@@ -1,0 +1,18 @@
+URL: URL: https://github.com/m3Zentrovoy/DI-BOOTCAMP/blob/main/W2/D5(miniPROJECT)/RPS/game.py
+suggestions for improvement:
+- The `game.py` file should be structured to be importable by `rock-paper-scissors.py`.  Currently it lacks a `main` function and is only designed to be run directly. A simple change to add a `if __name__ == "__main__":` block would allow for both direct running and importing.
+- Add comprehensive error handling (e.g., `try-except` blocks) in `rock-paper-scissors.py` to gracefully handle potential issues (such as invalid user input outside the menu choices).
+- The `print_results` function in `rock-paper-scissors.py` is missing; it needs to be implemented according to the instructions.
+- The `main` function in `rock-paper-scissors.py` is missing; implement it to handle the game loop and menu interaction, creating a `Game` object and calling its methods.
+- Improve the user experience by adding more informative messages, better formatting in output, and clearer instructions.
+Correctness: 95%
+-----
+URL: URL: https://github.com/m3Zentrovoy/DI-BOOTCAMP/blob/main/W2/D5(miniPROJECT)/RPS/rock-paper-scissors.py
+suggestions for improvement:
+- The `game.py` file is missing, making a complete correctness assessment impossible.  The provided code only shows the menu and result handling.
+- Error handling in `get_user_menu_choice()` could be improved by using a `try-except` block to handle potential `KeyError` exceptions if the `choice` is not found in `valid_choices`.
+- The `print_results` function assumes the dictionary will always contain 'win', 'loss', and 'draw' keys. It should handle cases where a key is missing to avoid errors.
+- Add more robust input validation to ensure the user enters only allowed values.  For example, check if the input is even a number before accessing `valid_choices`.
+- Consider using a more descriptive variable name than 'results' in main().
+Correctness: 95%
+-----
