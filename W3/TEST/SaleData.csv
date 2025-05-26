@@ -1,0 +1,9 @@
+Date,Product,Category,Price,Quantity,Region
+2025-01-01,Laptop,Electronics,1000,2,New York
+2025-01-01,Shirt,Clothing,30,5,Los Angeles
+2025-01-02,Phone,Electronics,600,3,Chicago
+2025-01-02,Jeans,Clothing,50,4,New York
+2025-01-03,Tablet,Electronics,400,1,Los Angeles
+2025-01-03,Jacket,Clothing,80,2,Chicago
+2025-01-04,Headphones,Electronics,100,6,New York
+2025-01-04,Sneakers,Clothing,70,3,Chicago
