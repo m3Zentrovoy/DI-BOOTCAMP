@@ -1,0 +1,13 @@
+URL: https://github.com/m3Zentrovoy/DI-BOOTCAMP/blob/main/W1/DAY5(Mini_Project)/Exercise/TicTacToe.py
+suggestions for improvement:
+- Improve the `display_board()` function to make the board visually appealing.  Currently, it uses numbers to represent empty cells which is not ideal for user experience. Consider using a more visually distinct representation of the empty cells, such as '   ' or '-' to improve clarity.
+- Add more comprehensive input validation in `player_input()`.  While it checks for numbers outside 1-9 and already filled cells,  it could be improved to handle non-numeric input more gracefully.
+- Consider adding a clear prompt at the beginning of the game explaining the rules and how to play.
+- The code is mostly in Russian, but the comments and function names are in English, creating some inconsistency.  Choose one language consistently for better readability.
+- Add a function to handle resetting the game after the end, simplifying the process for users who want to play again.
+Brief justification:
+- correctness: The code implements a functional Tic-Tac-Toe game.  It correctly represents the board, gets player input, checks for wins and ties, and switches players.  The win condition checks all rows, columns, and diagonals. The tie condition correctly identifies when the board is full. Minor improvements in input validation are suggested, but the core functionality meets the chapter's requirements.
+- readability: The code is generally well-structured with clear function separation. However, the display is not visually appealing and could be improved.  The mixed use of Russian and English makes the code slightly harder to read. More descriptive variable names in some places would also enhance readability.  Adding comments to explain more complex parts of the code would also help.
+- performance: The code's performance is efficient for a game of this size. The algorithms for checking wins and ties are straightforward and have a time complexity suitable for the problem. There are no apparent performance bottlenecks.
+- security: The code doesn't handle any external data or user inputs that would expose it to security vulnerabilities. The input validation, while needing minor improvement, prevents common input errors and does not create security risks.
+
