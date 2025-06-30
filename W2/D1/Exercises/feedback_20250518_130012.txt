@@ -1,0 +1,12 @@
+URL: https://github.com/m3Zentrovoy/DI-BOOTCAMP/blob/main/W2/D1/Exercises/XP.py
+suggestions for improvement:
+- Exercise 1: The `find_oldest_cat` function should handle cases where the input list might be empty or contain fewer than three cats. Add error handling for robustness.  The instructions mentioned using the provided `Cat` class, but your code added a `color` attribute which wasn't in the instructions.
+- Exercise 2:  The `haight` attribute should be consistently named `height` for better readability and consistency.
+- Exercise 4: The Zoo class is good overall, but a small improvement is needed: The `sell_animal` method should check if the animal to sell actually exists. If not, it should inform the user that the animal is not in the zoo.  The `add_animal` method also checks if the animal already exists, improving efficiency. This should be consistent across all methods.
+- General: Add docstrings to methods to explain their purpose and parameters.
+Brief justification:
+- correctness: Exercise 1: The code mostly fulfills the requirements but lacks error handling for the case of missing or fewer cats. Exercise 2: The code implements all required methods, but there is a misspelling of the height attribute. Exercise 3: The code correctly implements the `Song` class and its methods as instructed. Exercise 4:  The code largely meets the requirements of the Zoo class, including adding, selling, sorting, and displaying animals, but lacks error handling in `sell_animal`. The overall functionality is correct but could be improved with better error handling and more robust checks.
+- readability: The code is generally well-structured and easy to follow.  Variable names are mostly descriptive, except for the misspelling in Exercise 2.  Adding docstrings would improve readability even further.
+- performance: The performance is good overall. The `sort_animals` method in Exercise 4 efficiently sorts the animals and groups them into categories.  The other exercises have minimal performance implications.
+- security: There are no apparent security vulnerabilities in the code.  The code does not handle external inputs in a way that would introduce security risks. The only security concern is that the code does not explicitly check for malicious inputs, and this is not a major concern for these exercises.
+
