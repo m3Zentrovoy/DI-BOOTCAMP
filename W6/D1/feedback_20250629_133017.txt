@@ -1,0 +1,11 @@
+URL: https://github.com/m3Zentrovoy/DI-BOOTCAMP/blob/main/W6/D1/daily_W6-D1.sql
+suggestions for improvement:
+- The SQL code correctly addresses both tasks in the exercise.  However, the comments explaining the result of inserting a row with NULL values should be improved by actually trying the insertion and reporting the specific error message instead of a generic assumption.
+- Separate the SQL statements into different files for better organization.  Each file could represent a specific task or part of the exercise (e.g., create_table.sql, insert_data.sql, query_actors.sql).
+- Use more descriptive names for your SQL files (e.g., 'count_actors.sql', 'add_actor_with_nulls.sql'). This increases readability and maintainability.
+Brief justification:
+- correctness: The code correctly executes `SELECT COUNT(*) FROM actors` which addresses the first exercise instruction to count actors. It also attempts the second instruction by inserting an actor with NULL values which partially addresses it (but a more precise description of the outcome is needed). The correctness score is reduced because the comment about the NULL values insertion does not reflect the actual database's behavior;  it only speculates about the error.
+- readability: The code is reasonably readable with clear comments explaining each SQL statement and the purpose of each section.  However, separating the code into logically grouped files would improve readability and maintainability significantly.
+- performance: The SQL queries are efficient and well-structured. The performance impact of the provided queries is negligible.
+- security: There are no obvious security vulnerabilities in the provided SQL code.  The code focuses solely on database operations without handling external inputs, eliminating potential injection risks.
+

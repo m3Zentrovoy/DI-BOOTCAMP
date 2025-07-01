@@ -1,0 +1,10 @@
+URL: URL: https://github.com/m3Zentrovoy/DI-BOOTCAMP/blob/main/W2/D5(miniPROJECT)/Daily/Daily.py
+suggestions for improvement:
+- The explanations in Exercise 1 are too simplistic and lack depth.  They should provide more precise and formal definitions of OOP concepts.
+- The `deal` method in Exercise 2 uses `random.choice`, which is inefficient for dealing cards sequentially.  It's better to use `pop()` to remove the card from the beginning or end of the list after shuffling.
+- Exercise 2's `shuffle` method unnecessarily recreates the deck if it's not already 52 cards long. The deck should be created once in the `__init__` method. 
+- The output of both `shuffle` and `deal` methods in Exercise 2 prints the entire deck or remaining cards after each operation which is not required and could be verbose with a large deck
+- Improve the `__str__` method in the `Card` class to represent the card value and suit more effectively (e.g., 'Ace of Spades').
+- Add error handling to the `deal` method. What happens if the deck is empty?
+Correctness: 80%
+-----
