@@ -1,0 +1,13 @@
+URL: https://github.com/m3Zentrovoy/DI-BOOTCAMP/blob/main/W6/D2/XP_W6-D2.sql
+suggestions for improvement:
+- Add comments to explain the purpose of each query more thoroughly.  For example, instead of just `--1 SELECT * FROM items ORDER BY price`, use something like `--1 SELECT * FROM items ORDER BY price; --Retrieves all items ordered by price (ascending)`.
+- In Exercise 2, queries 8 and 9 assume a specific favorite movie ('The Matrix'). This should be parameterized or made more generic to be reusable for any user's favorite movie.
+- Query 11 in Exercise 2 could be improved by using `OFFSET` and `FETCH` instead of relying on `LIMIT` twice. This improves readability and avoids potential issues with database systems that handle limits differently.
+- Consider using aliases for table names to shorten queries and improve readability. For example,  `SELECT c.first_name FROM customer c` instead of `SELECT first_name FROM customer`.
+- For larger datasets, consider adding indexes to the tables to improve the performance of queries, especially those using `ORDER BY` or `WHERE` clauses.
+Brief justification:
+- correctness: The code directly addresses all the exercises in the chapter content.  Most queries are accurate and return the expected results as described in the instructions. The minor deduction is due to the hardcoded movie title in queries 8 and 9 and the less-than-optimal approach to handling pagination in query 11.
+- readability: The code is generally readable, using clear SQL syntax. However, adding more detailed comments would significantly improve understanding. Using table aliases would enhance readability in longer queries.
+- performance: The performance of most queries is acceptable for small datasets. However, for larger databases, the lack of indexes could lead to performance issues, especially with sorting and filtering. The query 11 approach, using LIMIT twice, isn't the most efficient way to handle pagination in large tables. 
+- security: The provided SQL code does not contain any obvious security vulnerabilities.  It's not performing any actions that would expose sensitive data or allow for SQL injection if the queries are properly parameterized (which they are not in queries 8 & 9) in a production environment.
+

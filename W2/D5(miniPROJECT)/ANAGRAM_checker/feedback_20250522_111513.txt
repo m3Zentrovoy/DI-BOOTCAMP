@@ -1,0 +1,16 @@
+URL: URL: https://github.com/m3Zentrovoy/DI-BOOTCAMP/blob/main/W2/D5(miniPROJECT)/ANAGRAM_checker/anagram_checker.py
+suggestions for improvement:
+- Improve error handling in `__init__`. Instead of printing error messages, raise exceptions to be handled by the calling function.
+- Add input validation to `get_anagrams` to handle non-string inputs more robustly.
+- Consider using a more efficient data structure for `self.sowpods` if dealing with extremely large word lists.
+- The `anagrams.py` file (UI part) is missing, which prevents a complete assessment of the solution.  The score reflects the provided `anagram_checker.py` file only.
+Correctness: 95%
+-----
+URL: URL: https://github.com/m3Zentrovoy/DI-BOOTCAMP/blob/main/W2/D5(miniPROJECT)/ANAGRAM_checker/anagrams.py
+suggestions for improvement:
+- The `AnagramChecker` class is missing from the provided code.  The solution relies on its existence but doesn't include its implementation.
+- Error handling could be improved. Instead of just printing error messages, consider using exceptions for better error management.
+- The performance could be significantly improved by using more efficient algorithms for finding anagrams.  Currently, it's likely doing a brute-force search which is inefficient for large word lists.
+- Add more robust input validation.  While it checks for single words and alphabetic characters, it doesn't handle edge cases like empty input.
+Correctness: 85%
+-----

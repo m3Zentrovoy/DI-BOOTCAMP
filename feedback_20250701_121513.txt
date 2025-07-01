@@ -1,0 +1,18 @@
+URL: URL: https://github.com/m3Zentrovoy/DI-BOOTCAMP/blob/main/W6/D3/XP-part1_W6-D3.sql
+suggestions for improvement:
+- Use more descriptive variable and table names. For example, instead of 'new_film', consider 'films_added' or 'additional_films'.
+- Add comments to explain the purpose of each SQL statement, especially for more complex queries. This will improve the readability and maintainability of your code.
+- For Exercise 2, provide the SQL statements for parts 1, 2, 3, 4, 5, and 6.  The current code only addresses parts of Exercise 1.
+- In Exercise 1, part 6, consider using parameterized queries instead of directly embedding values within the INSERT statements to prevent SQL injection vulnerabilities.   Your date format ('2025/06/30') is not standard.  Use a format that your database is expected to interpret (e.g., 'YYYY-MM-DD HH:MM:SS').
+- In Exercise 1, part 7, the comment claims that deleting from `new_film` also deletes from `customer_review`. While this is true *because* of the ON DELETE CASCADE constraint, it would be clearer to demonstrate this with a SELECT statement after the DELETE to confirm the row is gone.
+Correctness: 90%
+-----
+URL: URL: https://github.com/m3Zentrovoy/DI-BOOTCAMP/blob/main/W6/D3/XP-part2_W6-D3.sql
+suggestions for improvement:
+- Improve query 6.3: The provided query doesn't correctly identify rentals with a payment amount over $4.00.  It needs to filter by the `amount` column in the `payment` table.
+- Improve query 6.4: The logic for finding the fourth movie is flawed.  The `OR` condition in the `WHERE` clause may lead to incorrect results.  It should be an `AND` condition, and potentially require more precise matching of titles or descriptions.
+- Add comments to explain the purpose and logic of each query more comprehensively. While some comments exist, more detail will significantly improve readability.
+- For better performance in larger datasets, consider adding indexes to relevant columns (e.g., `film_id`, `customer_id`, `language_id`) in the various tables.  This would speed up the joins significantly.
+- In Exercise 2.3, specifying `ON DELETE CASCADE` on the foreign key constraint in the `customer_review` table is crucial and should be included in the code. This ensures automatic deletion of associated rows.
+Correctness: 80%
+-----
