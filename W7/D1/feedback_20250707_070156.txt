@@ -1,0 +1,12 @@
+URL: https://github.com/m3Zentrovoy/DI-BOOTCAMP/blob/main/W7/D1/Daily_W7-D1.sql
+suggestions for improvement:
+- The code for detecting duplicates only shows the duplicates, it doesn't delete them. Add a DELETE statement to remove them.  The `DELETE FROM employees WHERE employee_id IN (SELECT employee_id FROM (SELECT employee_id, COUNT(*) FROM employees GROUP BY employee_id HAVING COUNT(*) > 1) as duplicates)` statement would be a more efficient and safe way to handle it.
+- The outlier detection only provides statistics; it doesn't suggest how to handle outliers.  Consider adding logic to either remove or cap outliers based on a defined threshold (e.g., salaries more than 3 standard deviations from the mean).
+- Add comments explaining the purpose of each section of the code and the rationale behind the chosen methods for handling missing values, outliers etc. The comments make it more understandable and easier to follow.
+- While the code addresses inconsistent naming conventions, it could benefit from a more comprehensive approach. Consider using a consistent casing convention (like snake_case) for all column names if you are going to modify them.
+Brief justification:
+- correctness: The SQL code correctly addresses most of the data cleaning and transformation tasks outlined in the chapter.  It handles missing values, corrects data types, standardizes names, and detects outliers. However, it doesn't actually remove duplicate rows (only identifies them) and doesn't provide actions to handle the detected outliers.  These omissions reduce the correctness score.
+- readability: The code is generally readable. However,  it could be significantly improved with better commenting and a more logical grouping of tasks. The lack of comments makes it less easy for others to understand your thought process.
+- performance: The performance could be improved.  For instance, checking for duplicates using `GROUP BY` and `HAVING` is an acceptable approach, but it can be slow for very large tables. More efficient methods exist for identifying and deleting duplicates. Similarly, outlier handling could be made more efficient by using window functions or more sophisticated statistical methods. 
+- security: The code doesn't contain any obvious security vulnerabilities.  All operations are performed within the context of the database, and there's no exposure of sensitive data to external sources.
+
