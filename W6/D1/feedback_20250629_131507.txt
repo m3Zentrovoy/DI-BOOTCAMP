@@ -1,0 +1,14 @@
+URL: https://github.com/m3Zentrovoy/DI-BOOTCAMP/blob/main/W6/D1/XP_W6-D1.sql
+suggestions for improvement:
+- The database name should be 'public' as specified in the instructions.
+- The query `SELECT * FROM items WHERE price >= 300` should be `SELECT * FROM items WHERE price <= 300` to retrieve items with a price below or equal to 300.
+- The query `SELECT * FROM customers WHERE last_name NOT IN ('Scott')` should likely be `SELECT * FROM customers WHERE first_name != 'Scott'` to correctly filter by first name.
+- Add comments to explain the purpose of each SQL query more clearly.
+- Consider using more descriptive column names (e.g., `item_id`, `item_name`, `customer_id`).
+- The SQL code should be saved as a `.sql` file for submission to GitHub as instructed.
+Brief justification:
+- correctness: The code creates tables, inserts data, and executes most of the queries correctly.  However, there are errors in the price filter query (>= instead of <=) and the first name filter query (using `last_name` instead of `first_name`), and the database name is incorrect, reducing the correctness score. The chapter explicitly asks for data retrieval using SQL; the code directly addresses this, but with some inaccuracies.
+- readability: The SQL code is generally well-formatted and easy to understand.  Adding comments would further improve readability.
+- performance: The SQL queries are efficient and would perform well with larger datasets. There are no obvious performance bottlenecks.
+- security: The provided code does not contain any security vulnerabilities.  No sensitive data is handled.
+
