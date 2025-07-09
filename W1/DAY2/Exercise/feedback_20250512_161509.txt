@@ -1,0 +1,18 @@
+URL: https://github.com/m3Zentrovoy/DI-BOOTCAMP/blob/main/W1/DAY2/Exercise/XP.py
+suggestions for improvement:
+- **Exercise 1:** The code uses lists instead of sets.  Sets are specifically requested for this exercise to demonstrate their unique properties (no duplicates).  The concatenation is also incorrect; the `+` operator should be used with sets, not lists.
+- **Exercise 2:** The code correctly demonstrates the immutability of tuples by converting the tuple to a list, modifying the list, and then converting it back to a tuple. However, it could explicitly explain *why* this workaround is necessary.
+- **Exercise 3:** The code correctly implements the list manipulations, but `basket.count('Apples')` doesn't actually *do* anything with the count; it should print the result. 
+- **Exercise 4:** The code generates the sequence correctly. The explanation of floats and integers is adequate.
+- **Exercise 5:**  The code correctly implements both `for` loops.
+- **Exercise 6:** The code works correctly but could be improved by using a more descriptive variable name than `active`.
+- **Exercise 7:** The code correctly handles the fruit input and list manipulation. It could be slightly more concise.
+- **Exercise 8:** The code functions correctly but lacks error handling (what happens if the user enters non-numeric data?).
+- **Exercise 9:** Only the first part of Exercise 9 is implemented (calculating the total ticket cost). The bonus part (teenagers and restricted movies) is missing.
+- **Exercise 10:** The code correctly removes 'Pastrami' and prepares the sandwiches. However, it could be made more efficient by using a `while` loop to iterate and remove 'Pastrami' instead of using `index` and `del` repeatedly.
+Brief justification:
+- correctness: Many exercises are partially correct. Some correctly implement the core logic but miss minor details or optimizations (e.g., using sets in Exercise 1, printing the count in Exercise 3). Exercise 9 is only partially complete.
+- readability: The code is generally readable, with clear variable names and straightforward logic. However, some improvements could be made (e.g., more descriptive variable names, better comments, more efficient loop in Exercise 10).
+- performance: The code is reasonably efficient, with only minor areas for optimization (Exercise 10).  The algorithm choices are generally good.
+- security: There are no apparent security vulnerabilities. The code doesn't interact with external systems or handle sensitive data.
+

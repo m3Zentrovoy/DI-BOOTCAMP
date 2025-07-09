@@ -1,0 +1,10 @@
+URL: https://github.com/m3Zentrovoy/DI-BOOTCAMP/blob/main/W6/D5/XP-W6-D5.sql
+suggestions for improvement:
+- Task 2 of Exercise 1 is incomplete. It needs to use the `NTILE()` function to divide movies into quartiles based on revenue and display the quartile along with company name, movie title, and revenue.
+- Add comments to explain the purpose of each section of the code, particularly for complex queries involving multiple joins and window functions.
+Brief justification:
+- correctness: Most tasks are correctly implemented using appropriate window functions and CTEs as specified in the chapter content.  However, Task 2 in Exercise 1 is incomplete; it does not use NTILE() as instructed, significantly reducing the correctness score.  All other tasks accurately address the given requirements.
+- readability: The code is well-formatted and easy to follow.  The use of CTEs where appropriate enhances readability.  Adding more detailed comments would further improve readability, especially in more complex queries.
+- performance: The queries are generally efficient for the tasks.  However, some queries could be optimized further. For example, in Task 2 of Exercise 2, using `DISTINCT` in a subquery is less efficient than grouping and then using window functions directly on the grouped data. The performance could also be improved by adding indexes to frequently joined columns (e.g., movie_id, person_id, genre_id).
+- security: No security vulnerabilities are present in the provided SQL code.  The code only focuses on data retrieval and analysis; it doesn't involve any data modification or user input that could introduce security risks.
+
