@@ -1,0 +1,16 @@
+URL: URL: https://github.com/m3Zentrovoy/DI-BOOTCAMP/blob/main/W2/D2/Exercise/XP/XP.py
+suggestions for improvement:
+- Exercise 1: The Siamese class doesn't add any unique attributes or methods as suggested.  Adding a unique trait (e.g., a method for a specific Siamese vocalization) would enhance the exercise and better demonstrate inheritance.
+- Exercise 1:  The instructions mention using Bengal, Chartreux, and Siamese cats.  The code creates instances, but doesn't explicitly name them according to breed as shown in the example. Consider adding better descriptive variable names.
+- Exercise 3: The example code in the instructions provides solutions within the `__init__`, `train`, and `do_a_trick` functions.  Remove those comments to avoid providing the answers.
+Correctness: 90%
+-----
+URL: URL: https://github.com/m3Zentrovoy/DI-BOOTCAMP/blob/main/W2/D2/Exercise/XP/Xp2.py
+suggestions for improvement:
+- In Exercise 3, the `PetDog` class's `__init__` method should explicitly list `name`, `age`, and `weight` as parameters, matching the `Dog` class.  Currently, it omits these, relying on implicit inheritance, which is less clear.
+- In Exercise 3, add a docstring to each method in the `PetDog` class to explain its purpose and parameters.
+- In Exercise 4, add error handling to the `check_majority` method in case a person with the given first name isn't found in the family.
+- In Exercise 4, improve the `family_presentation` method by presenting the last name in a better format and adding more detailed person information (e.g., full name, age).
+- Improve code comments. Some methods are missing or have insufficient comments explaining their logic.  Docstrings are recommended for improved readability and understanding.
+Correctness: 90%
+-----

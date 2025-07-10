@@ -1,0 +1,15 @@
+URL: https://github.com/m3Zentrovoy/DI-BOOTCAMP/blob/main/W7/D5/XP_W7_D5.ipynb
+suggestions for improvement:
+- **Exercise 1:** The code correctly parses the provided HTML and extracts the title, paragraphs, and links.  However, it doesn't demonstrate fetching the HTML from a URL using `urlopen()`, as the exercise instructs. The HTML is hardcoded. 
+- **Exercise 2:** The code successfully fetches and displays the `robots.txt` content from the specified Wikipedia URL.  It handles decoding correctly. 
+- **Exercise 3:** The code correctly extracts and displays all header tags (h1-h6) from the Wikipedia main page. It uses `urlopen` and `BeautifulSoup` as expected.
+- **Exercise 4:** This code accurately checks for and prints whether a webpage contains a title or not using the `soup.title` method.
+- **Exercise 5:** The code fetches the US-CERT page but its logic for counting alerts needs significant improvement. It only counts `<h3>` tags with a specific class, which may not accurately represent the number of alerts, especially if the website's structure changes. It also hardcodes the year (2023).
+- **Exercise 6:**  The code successfully scrapes movie details. It uses the `application/ld+json` data, which is efficient, and handles the case where there might not be enough movies. However, it relies on the specific structure of the IMDb page's JSON-LD, which is fragile.  Error handling (what if the request fails?) is lacking.  The exercise asks for year, but the code only extracts the movie's name and summary.
+- **General Improvements:** Add error handling (e.g., `try...except` blocks) to handle potential network errors or issues with parsing.  Use more descriptive variable names. Add comments to explain complex logic.
+Brief justification:
+- correctness: Exercises 1, 3, and 4 directly address the chapter's objectives by demonstrating HTML parsing with BeautifulSoup, accurately extracting specific elements, and checking page titles. Exercise 2 correctly fetches robots.txt. Exercise 5 partially addresses the objective but has flaws in counting alerts and year handling. Exercise 6 largely fulfills the requirement but lacks a crucial element (extracting the year) and robust error handling.  The hardcoding of HTML in Exercise 1 lowers the correctness score.
+- readability: The code is generally readable, using clear, though not always descriptive variable names (improvement suggested).  Functions would improve readability, especially for exercises 5 and 6.
+- performance: The performance is acceptable for the small datasets used in the exercises. However,  in exercises 5 and 6, inefficient scraping techniques could become a problem with larger datasets. The use of JSON-LD in exercise 6 improves performance, but extracting directly from HTML would be slower. 
+- security: The security score is lowered because the code lacks comprehensive error handling and input validation.  Using only a simple `User-Agent` header in Exercise 6 might be insufficient to avoid detection by anti-scraping measures on the IMDB website.  Improper error handling leaves the code vulnerable to exceptions crashing the program.
+

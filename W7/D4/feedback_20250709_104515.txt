@@ -1,0 +1,14 @@
+URL: https://github.com/m3Zentrovoy/DI-BOOTCAMP/blob/main/W7/D4/XP_W7_D4.ipynb
+suggestions for improvement:
+- Exercise 2: The code assumes the Excel file is in '/content/Plants.xlsx'.  This path is not guaranteed to be correct for all environments.  Make the path configurable by either passing it as a command-line argument or prompting the user for it. Add error handling in case the file doesn't exist.
+- Exercise 2: The code uses a `while True` loop to find the end of the data. This might become inefficient with very large spreadsheets. Consider iterating through rows directly using `ws.iter_rows()` or `ws.max_row` to limit iteration.
+- Exercise 3: The code overwrites the entire file except for the first row instead of only appending the filtered data, as requested. Improve this to only append the filtered data to a new sheet or to a specified location in the same sheet.
+- Exercise 3:  Error handling is missing. What if the Excel file isn't found or is improperly formatted?
+- Exercise 4: The code creates a plot but doesn't export this plot as part of the excel file, which is a stated requirement.  Integrate the chart into the Excel file (requires matplotlib and openpyxl integration or a different approach).
+- General: Add comments to explain the purpose of different code sections. This will improve readability significantly.
+Brief justification:
+- correctness: The code addresses the core functionality described in the exercises. Exercise 1 successfully creates an Excel file with formulae. Exercise 2 correctly identifies plants not in stock, though with path limitations and potential performance issues. Exercise 3 largely works but has a flaw in its data writing approach. Exercise 4 successfully processes and saves the data but omits the visualization within the Excel file, as requested.
+- readability: The code is generally easy to follow but lacks sufficient comments. The use of meaningful variable names enhances readability. However, some parts could benefit from improved structure and comments that clearly explain their functionality and purpose.
+- performance: Exercise 2 could be improved for performance in large files, as noted above. The other exercises run efficiently for the given data size. The performance is generally acceptable but lacks optimization in Exercise 2, affecting the score.
+- security: The code does not present any security vulnerabilities. No external data sources are accessed that could introduce malicious code or risks. There is no user input that is not properly sanitized. The score is full (100%).
+

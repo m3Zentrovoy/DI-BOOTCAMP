@@ -1,0 +1,9 @@
+URL: URL: https://github.com/m3Zentrovoy/DI-BOOTCAMP/blob/main/W7/D2(Mini-Project)/DAILY(mini_project)_W7_D2/DAILY(mini_project)_W7_D2.ipynb
+suggestions for improvement:
+- The code is well-structured, using functions to improve readability and organization.  However, error handling (e.g., checking if the database file exists) is missing.
+- The `sqlq` function is a good helper, but it might be beneficial to add error handling and logging to handle potential issues with database operations.
+- Consider adding more descriptive variable names, especially in the longer SQL queries, to enhance readability. For example, instead of `bs`, `bbb`, use names like `batsman_scored`, `ball_by_ball` respectively. 
+- For better performance in the final comprehensive query, explore indexing relevant columns in the SQL database.  This can significantly speed up join operations. 
+- The final query is quite long and complex; breaking it down further into smaller, more manageable CTEs (Common Table Expressions) would improve readability and maintainability.
+Correctness: 100%
+-----

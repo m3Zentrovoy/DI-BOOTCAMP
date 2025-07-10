@@ -1,0 +1,14 @@
+URL: URL: https://github.com/m3Zentrovoy/DI-BOOTCAMP/blob/main/W6/D3/Daily_part1-W6-D3.sql
+suggestions for improvement:
+- The query to count not logged in customers should use a LEFT JOIN to include customers without profiles, ensuring all customers are considered.
+- Add error handling (e.g., try-catch blocks if using procedural SQL or equivalent mechanisms in other SQL dialects) to gracefully handle potential issues like duplicate entries or missing data.
+Correctness: 90%
+-----
+URL: URL: https://github.com/m3Zentrovoy/DI-BOOTCAMP/blob/main/W6/D3/Daily-part2-W6-D3.sql
+suggestions for improvement:
+- The code for Part I is missing.  The solution should include the code for creating and populating the `Customer` and `Customer_profile` tables, as well as the queries for the JOIN operations.
+- The `Library` table's primary key should explicitly list `student_fk_id` before `book_fk_id` to match the order used in the `INSERT` statements. This enhances consistency and might prevent future issues.
+- Consider adding error handling to your queries, especially for `SELECT` statements that might return no rows. This could prevent unexpected failures in a production environment.
+- While the `ON DELETE CASCADE` and `ON UPDATE CASCADE` clauses are good practice for maintaining referential integrity, it is good to test the delete and update behavior separately to verify their functionality.
+Correctness: 95%
+-----
