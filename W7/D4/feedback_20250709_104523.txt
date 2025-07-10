@@ -1,0 +1,10 @@
+URL: https://github.com/m3Zentrovoy/DI-BOOTCAMP/blob/main/W7/D4/Daily_W7_D4.ipynb
+suggestions for improvement:
+- The code could be improved by using a loop to generate the average formulas instead of writing them individually for each column. This would make the code more concise and easier to maintain if the number of columns were to change.
+- Consider adding error handling.  For instance, what happens if the `data` dictionary is empty?  Adding a check would prevent errors.
+Brief justification:
+- correctness: The code accurately creates an Excel workbook, adds a sheet named "Grades", populates it with the provided data, adds average formulas to calculate the average grade for each subject, and applies bold and colored formatting to the header row.  It directly addresses all requirements of the task. The only minor issue is the lack of a loop for average calculation, resulting in a slight deduction.
+- readability: The code is well-structured and easy to follow. Variable names are descriptive, and the logic is clear.  However, the repeated lines for calculating averages reduce readability. A loop would improve this.
+- performance: The code's performance is efficient for the given task.  It uses built-in functions of `openpyxl` effectively and doesn't include any unnecessary computations.
+- security: The code does not involve any security concerns as it only deals with creating and manipulating a local Excel file. No external data or user input is involved.
+

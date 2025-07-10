@@ -1,0 +1,15 @@
+URL: https://github.com/m3Zentrovoy/DI-BOOTCAMP/blob/main/W1/DAY4/Exercise/Exercises_XP(mandatory).py
+suggestions for improvement:
+- **Exercise 1:** The code correctly implements the `display_message()` function as specified. No improvements needed.
+- **Exercise 2:** The code correctly implements the `favorite_book()` function and uses an f-string for clear output. No improvements needed.
+- **Exercise 3:** The code correctly implements the `describe_city()` function with a default parameter value. No improvements needed.
+- **Exercise 4:** The code has a crucial flaw. It takes user input as a string and compares it to an integer which will always return `False` unless the user inputs '1'.  It should convert the user input to an integer using `int()` before comparison. The print statements inside the if/else blocks are also misleading and should be changed to accurately reflect the comparison results.
+- **Exercise 5:** The code correctly implements `make_shirt()` with default values and demonstrates usage with different parameter combinations, including keyword arguments. No improvements needed.
+- **Exercise 6:** The code correctly implements both `show_magicians()` and `make_great()`.  The `make_great` function modifies the list in place as expected. No improvements needed.
+- **Exercise 7:** The code correctly implements `get_random_temp()` and `main()`, providing temperature-based advice as per the instructions. The conditional statements effectively cover the specified temperature ranges. No improvements needed.
+Brief justification:
+- correctness: Most exercises are implemented correctly.  Exercise 4 has a significant flaw in its comparison logic; it fails to convert the user input to an integer before comparing it to the randomly generated number.  Other exercises are implemented correctly and precisely follow the instructions provided in the Chapter Content/Questions. 
+- readability: The code is generally well-written and easy to understand. Variable and function names are descriptive, and the code is well-structured.  The use of f-strings enhances readability in several exercises.
+- performance: The code's performance is efficient. There are no unnecessary computations or inefficient data structures used. The random number generation is appropriate for the task.
+- security: There are no apparent security vulnerabilities in the code.  The code doesn't interact with external resources or handle user input in a way that would introduce security risks. The only potential security risk would be in Exercise 4, where improper handling of user input could lead to issues (though this is mostly a correctness issue, not a security one).
+

@@ -1,0 +1,9 @@
+URL: URL: https://github.com/m3Zentrovoy/DI-BOOTCAMP/blob/main/W7/D2(Mini-Project)/Mini_project1_W7_D2.ipynb
+suggestions for improvement:
+- The code uses a SQLite in-memory database, which is suitable for this project's scope.  However, for larger datasets or persistent storage, consider using a file-based SQLite database ('sqlite:///mydatabase.db') or a more robust database system like PostgreSQL or MySQL.
+- The `sqlq` function is a good addition for readability, but it could benefit from error handling (e.g., `try...except` block) to gracefully manage potential SQL query errors.
+- The performance could be improved by optimizing the SQL queries, particularly those involving joins and aggregations. Adding indexes to relevant columns in the database schema would significantly improve query execution times.  For example, consider adding an index to `order_purchase_timestamp` in the `olist_orders` table to speed up date filtering.
+- For Queries 7 and 9, especially, break down the complex queries into smaller, more manageable CTEs (Common Table Expressions).  This significantly improves readability and may offer slight performance gains.
+- Add comments to explain complex SQL logic within the queries.  Break down multi-line queries for better readability.
+Correctness: 100%
+-----

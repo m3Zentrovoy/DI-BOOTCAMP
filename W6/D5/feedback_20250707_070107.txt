@@ -1,0 +1,13 @@
+URL: https://github.com/m3Zentrovoy/DI-BOOTCAMP/blob/main/W6/D5/Daily-W6-D5.sql
+suggestions for improvement:
+- In Task 1, consider handling cases where the `prev_budget` is zero to avoid division by zero errors.  A `CASE` statement could elegantly handle this.
+- Task 2's use of implicit joins is less readable than explicit joins. Using `JOIN` syntax would improve readability and maintainability.
+- For better performance in Task 2, add indexes to the relevant columns in the tables (e.g., `movie.vote_average`, `movie_cast.movie_id`, `movie_cast.person_id`, `person.person_id`).
+- Task 3's query is efficient, but it might be even better to pre-filter movies within the relevant date range before applying the window function, potentially reducing the processing load for large datasets. A CTE could help with this.
+- Task 4 assumes keywords are a perfect identifier for a movie series, which might not be true.  This could lead to inaccurate results. Consider adding a more robust series identification mechanism if your data allows for it.
+Brief justification:
+- correctness: All four tasks accurately address the problems stated in the Chapter Content/Questions.  Each task uses window functions (`LAG`, `AVG`, `SUM`, `RANK`) and CTEs (Common Table Expressions) as requested to produce the specified results. The code directly implements the functionality described, thus achieving 100% correctness.
+- readability: The code is generally well-structured and easy to follow. However, some improvements could enhance readability, specifically the implicit joins in Task 2 and the potential for clearer error handling in Task 1.  The use of CTEs makes the logic modular and understandable. The comments are helpful, but could be more detailed in places.
+- performance: The queries are reasonably efficient, using appropriate window functions and aggregations.  However, indexing in Task 2 and pre-filtering in Task 3 could significantly improve performance, especially with larger datasets.  The current approach is suitable for moderate-sized datasets but could benefit from optimization for scalability. 
+- security: The provided SQL code does not introduce any known security vulnerabilities.  It's assumed that the database is properly secured and that the user has appropriate permissions. No sensitive data handling or injection risks are apparent.
+

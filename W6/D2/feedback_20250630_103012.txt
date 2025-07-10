@@ -1,0 +1,10 @@
+URL: https://github.com/m3Zentrovoy/DI-BOOTCAMP/blob/main/W6/D2/Daily_W6-D2.sql
+suggestions for improvement:
+- The explanations are good but could benefit from explicitly stating the numerical results of each query.  For example, 'This will return 3 rows' instead of just describing the logic.
+- Consider adding a small section on how `NOT IN` interacts with `NULL` values, explicitly clarifying the behavior (it essentially ignores NULLs) to improve understanding.
+Brief justification:
+- correctness: The analysis of each SQL query is perfectly accurate concerning the provided data in FirstTab and SecondTab. The logic regarding NULL values and the behavior of `NOT IN` is correctly described, directly addressing the chapter's focus on SQL basics and table relationships.
+- readability: The explanations are clear and easy to follow, although adding the expected numerical results would enhance readability.  The overall structure and writing style are good.
+- performance: While the analysis is correct, there's no discussion of potential performance issues with `NOT IN` (especially with large datasets), which could be improved.  The analysis implicitly assumes relatively small tables.
+- security: SQL injection is not a concern here as the provided code only deals with analyzing pre-defined queries. No user input is involved.
+

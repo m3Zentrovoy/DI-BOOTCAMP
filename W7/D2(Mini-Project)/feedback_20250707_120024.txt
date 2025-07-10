@@ -1,0 +1,5 @@
+URL: URL: https://github.com/m3Zentrovoy/DI-BOOTCAMP/blob/main/W7/D2(Mini-Project)/Mini_project1_W7_D2.ipynb
+suggestions for improvement:
+- Checker failed to provide a response.
+Correctness: N/A%
+-----

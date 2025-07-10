@@ -1,0 +1,14 @@
+URL: https://github.com/m3Zentrovoy/DI-BOOTCAMP/blob/main/W1/DAY3/Exercise/Daily_Challenge.py
+suggestions for improvement:
+- Challenge 1: The code for Challenge 1 is incomplete.  It's missing the `print(dictonary)` statement, making it impossible to assess its correctness fully. The code should also include error handling for unexpected input (e.g., non-alphabetic characters).
+- Challenge 2: The logic for Challenge 2 has a flaw.  The `if val > wallet:` check is placed incorrectly; it only checks the last item's price against the remaining wallet balance, not each item independently.  The solution correctly removes '$' and ',' from prices, but error handling (e.g., for non-numeric values in `items_purchase`) should be added.
+- Improve variable naming: Use more descriptive variable names (e.g., `item_prices` instead of `items_purchase`).
+- Add comments: Add comments to explain the purpose of different code sections. This enhances readability.
+- Use more Pythonic solutions: For Challenge 1, list comprehensions could make the code more concise and readable.
+- Handle edge cases: Ensure the code correctly handles edge cases such as empty input strings or empty dictionaries.
+Brief justification:
+- correctness: Challenge 1 code is partially correct but incomplete due to the missing print statement. The incomplete nature prevents a higher score.  Challenge 2 code demonstrates partial correctness; it correctly processes numerical values, but its logic for affordability checking is flawed. It achieves 80% because of the partial correctness, but the flawed logic prevents it from being fully correct.
+- readability: The code's readability is hindered by a lack of comments and somewhat terse variable names. While the basic structure is clear, better naming conventions and comments would greatly improve understanding. It's functional but could be easier to read and maintain.
+- performance: The performance of both solutions is acceptable for the problem size.  The code has a simple linear time complexity for both challenges (O(n)).  No significant performance issues are present.
+- security: The code does not have any obvious security vulnerabilities.  The input is not sanitized against malicious input that could cause runtime errors; it should be validated and the errors should be handled gracefully. However, given that it does not handle sensitive data, I scored it 100.
+
